@@ -2,22 +2,21 @@
 v-app
   v-app-bar(app)
     v-toolbar-title.headline.text-uppercase
-      span Vuetify
-      span.font-weight-light MATERIAL DESIGN
+      span Mochaccino
     v-spacer
     v-btn(text href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank")
       span.mr-2 Latest Release
   v-content
-    hello-world
+    main-view
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import MainView from './components/MainView';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    MainView,
   },
   data: () => ({
     //
