@@ -1,7 +1,7 @@
 <template lang="pug">
 v-layout#wrapper
     v-flex(xs12 ma-0)
-        v-card(v-for='(account, i) in accounts')
+        v-card(v-for='(account, i) in accounts' :key='account.name')
             v-card-text
                 | {{account.name}}
 </template>
