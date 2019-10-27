@@ -6,16 +6,16 @@ v-app
     v-spacer
     v-btn(text href="https://github.com/daslanky/mochaccino" target="_blank")
       span.mr-2 Latest Release
-  v-navigation-drawer(app permanent left fixed dark class='blue darken-3')
+  v-navigation-drawer(app permanent left fixed dark class='grey darken-4')
     v-list(dense nav flat)
       v-list-item(v-for='item in items' :key='item.title' link)
         v-list-item-icon
           v-icon {{item.icon}}
           v-list-item-content.mx-3
             v-list-item-title {{item.title}}
-  v-content(class='black')
+  v-content(class='grey darken-4')
     main-view
-  v-footer(fixed app dark)
+  v-footer(fixed app dark color='#007ACC')
     v-spacer
     span.px-3 &copy; 2019 Langston Richard Chandler
 </template>
